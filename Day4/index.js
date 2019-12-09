@@ -18,11 +18,16 @@
 
 
 function passCrack(start, end){
-
-
+    let newArr = [];
+    for( let i = start; i < end;i++){
+        if( isTwoDigits(i) && isAllIncreasing(i)){
+            newArr.push(i);
+        }
+    }
+    return newArr;
 }
-
 
 function isTwoDigits(){}
 
 function isAllIncreasing(){}
+
